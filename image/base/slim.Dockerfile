@@ -75,6 +75,9 @@ RUN /tmp/install-oxipng
 ADD install-redis /tmp/install-redis
 RUN /tmp/install-redis
 
+ADD install-pgvector /tmp/install-pgvector
+RUN /tmp/install-pgvector
+
 ADD install-rust /tmp/install-rust
 RUN /tmp/install-rust
 

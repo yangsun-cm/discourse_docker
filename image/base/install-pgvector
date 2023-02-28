@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+OXIPNG_VERSION="0.4.0"
+git clone --branch v${OXIPNG_VERSION} https://github.com/pgvector/pgvector.git /tmp/pgvector
+
+cd pgvector
+make
+make install
+rm -rf /tmp/pgvector
