@@ -4,7 +4,7 @@ set -e
 VECTOR_VERSION="0.4.0"
 git clone --branch v${VECTOR_VERSION} https://github.com/pgvector/pgvector.git /tmp/pgvector
 
-cd pgvector
+cd /tmp/pgvector
 make
 make install
 rm -rf /tmp/pgvector
